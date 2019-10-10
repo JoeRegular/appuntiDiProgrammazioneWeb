@@ -1,0 +1,67 @@
+/*  
+ PROPS BUTTON
+ type: success/error/warning/primary/secondary
+ size: small/medium/big
+ disabled: true/false
+ loading: true/false 
+ */
+
+
+.Button {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    padding: 0px 10px;
+    background-color: white;
+    font-size: 16px;
+    margin: 10px;
+}
+.Button:hover {
+    border: 5px solid grey;
+    /* background-color: #eaeaea ; */
+    }
+
+
+.Button.success {
+    border: 0;
+    background-color: green;
+    color: white;
+}
+.Button.success:hover {
+    /* color: green; */
+    /* background-color: white; */
+    /* border: 1px solid green; */
+    border: 5px solid grey;
+}
+
+.Button.error {
+    border : 0;
+    background-color: red;
+    color: white;
+}
+
+.Button.big {
+    height: 65px;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.Button.medium {
+    height: 45px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.Button.small {
+    height: 15px;
+    font-size: 10px;
+    padding: 0 20px;
+}
+
+.Button.disabled {
+    cursor: initial;
+    background-color: #eaeaea;
+}
+.Button.success.disabled {
+    background-color: black;
+}

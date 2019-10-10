@@ -1,0 +1,21 @@
+h1.titolo {
+    font-weight: bold;
+    font-size: 23px;
+    display: block;
+}
+
+h2.sottotitolo {
+    font-size: 18px;
+    display: block;
+}
+
+.CodeBox {
+    background-color: #333;
+    color: #fff;
+    width: 50vw;
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    white-space: pre-wrap;
+}
