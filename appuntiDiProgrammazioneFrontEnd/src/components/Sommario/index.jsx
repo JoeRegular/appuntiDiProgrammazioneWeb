@@ -52,16 +52,24 @@ const Sommario = () => {
               {argumentsList[tabIndex].component}
             </MasterDetailPage>
           </>)
-          : (<div>
-              {/* <ul style={{ flexDirection: 'row' }}>
-                <li onClick={() => setArgument('esercizi')}><a href="#">Esercizi</a></li>
-                <li onClick={() => setArgument('javascript')}><a href="#">Javascript</a></li>
-                <li onClick={() => setArgument('react')}><a href="#">React</a></li>
-              </ul> */}
+          : (<div className="col" style={{ display: 'flex' }}>
+              <Card argument="esercizi" />
+              <Card argument="javascript" />
+              <Card argument="react" />
             </div>)
         }
       </div>
     </div>
   );
 }
+
+const Card = props => (
+  <div className="card" style={{ width: '200px' }}>
+    <div className="card-body">
+      <h5 className="card-title">{props.argument}</h5>
+      <button className="btn btn-primary">Vai all'argomento</button>
+    </div>
+  </div>
+);
+
 export default Sommario;
