@@ -22,3 +22,10 @@
 .menu > li:not(:last-child) {
   margin-right: 5px;
 }
+
+.homeMenu {
+  height: calc(100vh - 56px - 30px);
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

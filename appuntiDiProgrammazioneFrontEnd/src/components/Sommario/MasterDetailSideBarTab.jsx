@@ -7,7 +7,7 @@ const MasterDetailSideBarTab = (props) => {
     <button
       onClick={onClick}
       type="button"
-      className={ "list-group-item list-group-item-action " + styles.sidebarText }
+      className={styles.sidebarText}
     >
       {tabText}
     </button>

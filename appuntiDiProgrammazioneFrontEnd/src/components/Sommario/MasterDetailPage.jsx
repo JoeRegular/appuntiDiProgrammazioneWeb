@@ -3,14 +3,14 @@ import styles from "./masterdetail.module.css";
 
 const MasterDetailPage = (props) => {
   return (
-    <div className="col">
-      <div className={"row " + styles.heading}>
-        <div className="col">
-          <h3 className="ml-3 mb-4">{props.title}</h3>
+    <div>
+      <div className={styles.heading}>
+        <div>
+          <h3>{props.title}</h3>
         </div>
       </div>
-      <div className="row">
-        <div className="col-12 mb-5">
+      <div>
+        <div>
           {props.children}
         </div>
       </div>

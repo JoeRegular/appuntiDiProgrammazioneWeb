@@ -1,5 +1,5 @@
 import React from "react";
-import { Titolo, Sottotitolo, CodeBox, Button } from "../Libreria/Libreria";
+import { Sottotitolo, Button } from "../Libreria/Libreria";
 
 export default function Bottoni() {
 
@@ -33,7 +33,7 @@ export default function Bottoni() {
     <hr/>
 
   <Sottotitolo> Bottone Primary </Sottotitolo> 
-    <Button type="button" className="btn btn-primary" >Primary</Button>
+    <Button type="button">Primary</Button>
     <Button type="Primary" size="big">Primary</Button>
     <Button type="Primary" size="medium">Primary</Button>
     <Button type="Primary" size="small">Primary</Button>

@@ -5,7 +5,11 @@ import styles from "./masterdetail.module.css";
 import reactArgumentsList from "../Argomenti React/config";
 import javascriptArgumentsList from "../Argomenti Javascript/config";
 import eserciziArgumentsList from '../Esercizi/config';
-
+import cssArgumentsList from '../Argomenti CSS/config';
+import Card from '../Libreria/Cards';
+import eserciziImg from '../../images/esercizi.jpg';
+import jsImg from '../../images/js.png';
+import reactImg from '../../images/react.jpg';
 
 const Sommario = () => {
 
@@ -20,6 +24,7 @@ const Sommario = () => {
   switch (argument) {
     case 'react': argumentsList = reactArgumentsList; break;
     case 'javascript': argumentsList = javascriptArgumentsList; break;
+    case 'css': argumentsList = cssArgumentsList; break;
     default: argumentsList = eserciziArgumentsList; break;
   }
 
@@ -27,20 +32,22 @@ const Sommario = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-dark bg-dark">
+      <nav>
         {/* Qui puoi inserire un titolo per l'applicazione */}
         <h1 style={{ color: 'white', fontSize: '24px', cursor: 'pointer' }} onClick={() => setArgument('')}>Appunti di programmazione</h1>
-        <ul className={"navbar-nav " + styles.menu} style={{ flexDirection: 'row' }}>
-          <li className="nav-item" onClick={() => setArgument('esercizi')}><a className="nav-link" href="#">Esercizi</a></li>
-          <li className="nav-item" onClick={() => setArgument('javascript')}><a className="nav-link" href="#">Javascript</a></li>
-          <li className="nav-item" onClick={() => setArgument('react')}><a className="nav-link" href="#">React</a></li>
+        <ul className={styles.menu} style={{ flexDirection: 'row' }}>
+          <li onClick={() => setArgument('esercizi')}><a href="#">Esercizi</a></li>
+          <li onClick={() => setArgument('css')}><a href="#">CSS</a></li>
+          <li onClick={() => setArgument('javascript')}><a href="#">Javascript</a></li>
+          <li onClick={() => setArgument('react')}><a href="#">React</a></li>
+
         </ul>
       </nav>
-      <div className="row">
+      <div>
         { argument !== ''
           ? (<>
-            <div className={"col-2 p-0 border-right " + styles.sidebar}>
-              <div className="list-group list-group-flush border-bottom">
+            <div className={styles.sidebar}>
+              <div>
                 { argumentsList.map((argument, i) => <MasterDetailSideBarTab
                   onClick={() => handleClick(i)}
                   tabText={argument.title}
@@ -52,24 +59,16 @@ const Sommario = () => {
               {argumentsList[tabIndex].component}
             </MasterDetailPage>
           </>)
-          : (<div className="col" style={{ display: 'flex' }}>
-              <Card argument="esercizi" />
-              <Card argument="javascript" />
-              <Card argument="react" />
+          : (<div className={styles.homeMenu}>
+              <Card argument="esercizi" image={eserciziImg} onClick={() => setArgument('esercizi')}/>
+              <Card argument="CSS" image={eserciziImg} onClick={() => setArgument('css')}/>
+              <Card argument="javascript" image={jsImg} onClick={() => setArgument('javascript')}/>
+              <Card argument="react" image={reactImg} onClick={() => setArgument('react')}/>
             </div>)
         }
       </div>
     </div>
   );
 }
-
-const Card = props => (
-  <div className="card" style={{ width: '200px' }}>
-    <div className="card-body">
-      <h5 className="card-title">{props.argument}</h5>
-      <button className="btn btn-primary">Vai all'argomento</button>
-    </div>
-  </div>
-);
 
 export default Sommario;

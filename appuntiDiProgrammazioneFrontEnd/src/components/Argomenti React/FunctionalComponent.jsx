@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import { Titolo, Sottotitolo, CodeBox, Button } from "../Libreria/Libreria";
+import { Sottotitolo, CodeBox } from "../Libreria/Libreria";
 
 export default function FunctionalComponent() {
   return (<main id="mainContent">
