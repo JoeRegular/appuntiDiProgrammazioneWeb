@@ -1,8 +1,9 @@
-﻿import React from "react";
+﻿import './reset.css';
+import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import registerServiceWorker from "./registerServiceWorker";
+import App from "./App";
 
 ReactDOM.render(
     <BrowserRouter>

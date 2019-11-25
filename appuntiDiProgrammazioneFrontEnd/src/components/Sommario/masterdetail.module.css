@@ -1,4 +1,10 @@
-﻿.sidebar {
+﻿.main {
+  height: calc(100vh - 56px - 30px);
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
   min-height: calc(100vh - 39.7px);
 }
 .sidebarText {
@@ -19,13 +25,20 @@
   padding-top: 20px;
 }
 
+.menu {
+  display: flex;
+  color: white;
+  cursor: pointer;
+}
+
 .menu > li:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 25px;
 }
 
 .homeMenu {
-  height: calc(100vh - 56px - 30px);
+  width: 100vw;
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }

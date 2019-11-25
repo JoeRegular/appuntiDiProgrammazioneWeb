@@ -2,6 +2,7 @@
 import MasterDetailPage from "./MasterDetailPage";
 import MasterDetailSideBarTab from "./MasterDetailSideBarTab";
 import styles from "./masterdetail.module.css";
+import styleSommario from "./sommario.module.css";
 import reactArgumentsList from "../Argomenti React/config";
 import javascriptArgumentsList from "../Argomenti Javascript/config";
 import eserciziArgumentsList from '../Esercizi/config';
@@ -32,18 +33,17 @@ const Sommario = () => {
 
   return (
     <div>
-      <nav>
+      <nav className={styleSommario.header}>
         {/* Qui puoi inserire un titolo per l'applicazione */}
         <h1 style={{ color: 'white', fontSize: '24px', cursor: 'pointer' }} onClick={() => setArgument('')}>Appunti di programmazione</h1>
-        <ul className={styles.menu} style={{ flexDirection: 'row' }}>
-          <li onClick={() => setArgument('esercizi')}><a href="#">Esercizi</a></li>
-          <li onClick={() => setArgument('css')}><a href="#">CSS</a></li>
-          <li onClick={() => setArgument('javascript')}><a href="#">Javascript</a></li>
-          <li onClick={() => setArgument('react')}><a href="#">React</a></li>
-
+        <ul className={styles.menu}>
+          <li onClick={() => setArgument('esercizi')}>Esercizi</li>
+          <li onClick={() => setArgument('css')}>CSS</li>
+          <li onClick={() => setArgument('javascript')}>Javascript</li>
+          <li onClick={() => setArgument('react')}>React</li>
         </ul>
       </nav>
-      <div>
+      <div className={styles.main}>
         { argument !== ''
           ? (<>
             <div className={styles.sidebar}>
