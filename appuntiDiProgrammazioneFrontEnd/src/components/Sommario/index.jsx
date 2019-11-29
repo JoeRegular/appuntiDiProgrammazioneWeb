@@ -8,9 +8,11 @@ import javascriptArgumentsList from "../Argomenti Javascript/config";
 import eserciziArgumentsList from '../Esercizi/config';
 import cssArgumentsList from '../Argomenti CSS/config';
 import Card from '../Libreria/Cards';
-import eserciziImg from '../../images/esercizi.jpg';
+import eserciziImg from '../../images/esercizi.gif';
 import jsImg from '../../images/js.png';
 import reactImg from '../../images/react.jpg';
+import CSSImg from '../../images/CSS.jpg';
+
 
 const Sommario = () => {
 
@@ -61,7 +63,7 @@ const Sommario = () => {
           </>)
           : (<div className={styles.homeMenu}>
               <Card argument="esercizi" image={eserciziImg} onClick={() => setArgument('esercizi')}/>
-              <Card argument="CSS" image={eserciziImg} onClick={() => setArgument('css')}/>
+              <Card argument="CSS" image={CSSImg} onClick={() => setArgument('css')}/>
               <Card argument="javascript" image={jsImg} onClick={() => setArgument('javascript')}/>
               <Card argument="react" image={reactImg} onClick={() => setArgument('react')}/>
             </div>)

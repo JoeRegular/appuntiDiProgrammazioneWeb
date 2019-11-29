@@ -1,0 +1,1 @@
+- nella card, hover l'h5 si sposta in alto >>> risolto aggiungendo 1 px di bordo anche non in hover
