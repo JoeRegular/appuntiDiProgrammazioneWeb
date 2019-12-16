@@ -3,5 +3,6 @@
     align-items: center;
     background-color: #3b0066;
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 0 25px;
+    min-height: 60px;
 }

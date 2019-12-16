@@ -1,1 +1,2 @@
-- nella card, hover l'h5 si sposta in alto >>> risolto aggiungendo 1 px di bordo anche non in hover
+- collassare nav bar in hamburger
+- centrare homeMenu, senza centrare MasterDetailPage nel file Sommario/index.jsx

@@ -1,6 +1,5 @@
 ﻿import React, { useState } from "react";
 import MasterDetailPage from "./MasterDetailPage";
-import MasterDetailSideBarTab from "./MasterDetailSideBarTab";
 import styles from "./masterdetail.module.css";
 import styleSommario from "./sommario.module.css";
 import reactArgumentsList from "../Argomenti React/config";
@@ -45,22 +44,13 @@ const Sommario = () => {
           <li onClick={() => setArgument('react')}>React</li>
         </ul>
       </nav>
-      <div className={styles.main}>
+      <div>
         { argument !== ''
-          ? (<>
-            <div className={styles.sidebar}>
-              <div>
-                { argumentsList.map((argument, i) => <MasterDetailSideBarTab
-                  onClick={() => handleClick(i)}
-                  tabText={argument.title}
-                  key={i}
-                />)}
-              </div>
-            </div>
+          ? (
             <MasterDetailPage title={argumentsList[tabIndex].title}>
               {argumentsList[tabIndex].component}
             </MasterDetailPage>
-          </>)
+          )
           : (<div className={styles.homeMenu}>
               <Card argument="esercizi" image={eserciziImg} onClick={() => setArgument('esercizi')}/>
               <Card argument="CSS" image={CSSImg} onClick={() => setArgument('css')}/>

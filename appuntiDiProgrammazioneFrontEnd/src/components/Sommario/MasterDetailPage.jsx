@@ -1,18 +1,14 @@
 ﻿import React from "react";
-import styles from "./masterdetail.module.css";
+import styles from "./dettaglioPagina.module.css";
 
 const MasterDetailPage = (props) => {
   return (
     <div>
       <div className={styles.heading}>
-        <div>
-          <h3>{props.title}</h3>
-        </div>
+        <h3>{props.title}</h3>
       </div>
       <div>
-        <div>
-          {props.children}
-        </div>
+        {props.children}
       </div>
     </div>
   );
