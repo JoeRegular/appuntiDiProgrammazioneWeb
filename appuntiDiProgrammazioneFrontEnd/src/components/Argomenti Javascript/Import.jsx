@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Oggetti() {
+export default function Import() {
   return (<main id="mainContent">
-    Testo spiegazione per Oggetti
+    Testo spiegazione per Import
   </main>);
 }
