@@ -1,0 +1,2 @@
+- collassare nav bar in hamburger
+- centrare homeMenu, senza centrare MasterDetailPage nel file Sommario/index.jsx

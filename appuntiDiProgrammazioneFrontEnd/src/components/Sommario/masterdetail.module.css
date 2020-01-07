@@ -1,24 +1,29 @@
-﻿.sidebar {
-  min-height: calc(100vh - 39.7px);
-}
-.sidebarText {
-  font-weight: 500;
-}
-
-.title {
-  font-weight: 700;
-  margin-bottom: 0;
+﻿.menu {
+  display: flex;
+  color: white;
+  cursor: pointer;
+  height: 100%;
 }
 
-.breadCrumbLink {
-  color: #025fce;
-}
-
-.heading {
-  background-color: #cecece;
-  padding-top: 20px;
+.menu >li{
+text-align: center;
+padding: 10px;
+border: 1px solid #3b0066;
+width: 80px;
 }
 
 .menu > li:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 25px;
+}
+.menu >li:hover{
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.homeMenu {
+  width: 100vw;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }

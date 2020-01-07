@@ -1,16 +1,5 @@
-﻿html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  padding: 0;
-}
-
-/* Override Bootstrap Styling */
-
-.btn-primary {
-  background-color: #025fce !important;
+﻿body, input, button {
+  font-family: 'Lato', sans-serif;
 }
 
 button:focus,

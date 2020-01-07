@@ -28,13 +28,11 @@ const Button = (props) => {
     return (
         <button className={classi.join(' ')} onClick={startLoading}>{
             loading
-            ? <i className="fas fa-spinner fa-spin"></i>
+            ? <i className="fas fa-spinner fa-spin" />
             : props.children
         }</button>
     );
 }
-
-
 
 export {
     Titolo,

@@ -1,5 +1,5 @@
 import React from "react";
-import { Titolo, Sottotitolo, CodeBox } from "../Libreria/Libreria";
+import { Sottotitolo, CodeBox } from "../Libreria/Libreria";
 
 export default function MetodiDegliArray() {
   return (<main id="mainContent">
@@ -154,8 +154,6 @@ export default function MetodiDegliArray() {
         Nota: reduce() non esegue la funzione per gli elementi di matrice senza valori.
         
     `}</p>
-
-
 
   </main>);
 }

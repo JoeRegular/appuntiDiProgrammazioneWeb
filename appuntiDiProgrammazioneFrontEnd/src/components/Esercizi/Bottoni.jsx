@@ -1,8 +1,8 @@
 import React from "react";
-import { Titolo, Sottotitolo } from "../Libreria/Libreria";
+import { Sottotitolo } from "../Libreria/Libreria";
 
-const BtnPrimary = props => <button type="button" className="btn btn-primary">{props.children}</button>;
-const BtnSuccess = props => <button type="button" className="btn btn-success">{props.children}</button>;
+const BtnPrimary = props => <button type="button">{props.children}</button>;
+const BtnSuccess = props => <button type="button">{props.children}</button>;
 
 export default function Bottoni(){
  return ( 
